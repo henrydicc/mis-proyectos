@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad Educativa</title>
+</head>
+<style>
+    .portada p {
+        font-size: 18px;
+        color: #444444;
+        margin-bottom: 25px;
+    }
+
+    .portada h2 {
+        color: #176B3A;
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    button {
+        background-color: #f5d323;
+        color: #176b3a;
+        padding: 12 px 25px;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        cursor: pointer;
+        font-weight: bold;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+    button:hover {
+        background-color: #176b3a;
+        color: white;
+        transition: 0.3s;
+        transform: scale(1.05);
+    }
+
+    .portada {
+        padding: 80px 20px;
+        text-align: center;
+        background-color: #f5f8f3;
+    }
+
+    nav {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin-right: 25px;
+        margin-top: 20px;
+    }
+
+    nav a:hover {
+        color: #f5d323;
+        transition: 0.3s;
+    }
+
+    header {
+        background-color: #176B3A;
+        color: white;
+        padding: 20px;
+        border-bottom: 4px solid #f5d323;
+        margin-bottom: 0;
+    }
+    header img {
+        width: 70px;
+    }
+
+    body {
+        background-color: white;
+        color: #176b3a;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .portada img {
+        width: 350px;
+        border-radius: 10px;
+    }
+
+    .encabezado {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    .encabezado h1 {
+        font-size: 35px;
+        margin: 0;
+    }
+
+    @media (max-whidht: 600px) {
+        .encabezado {
+            flex-direction: column;
+        }
+        nav a {
+            display: inline-block;
+            margin: 8px;
+        }
+        .encabezado h1 {
+            font-size: 20px;
+            text-align: center;
+        }
+        .portada h2 {
+            font-size: 28px;
+        }
+        .portada img {
+            width: 100%;
+            max-width: 350px;
+        }
+    }
+
+                .nosotros {
+                    padding: 50px 20px;
+                    text-align: center;
+                    background-color: white;
+                }
+
+                .nosotros p {
+                    color: #555555;
+                    font-size: 17px;
+                    max-width: 700px;
+                    margin: 0 auto;
+                }
+
+                .nosotros h2 {
+                    font-size: 32px;
+                    margin-bottom: 20px;
+                    border-bottom: 3px solid #f5d323;
+                    padding-bottom: 10px;
+                }
+
+                .tarjeta {
+                    background-color: #f5f8f3;
+                    padding: 25px;
+                    border-radius: 10px;
+                    margin-top: 30px;
+                    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+                    border: 1px solid #e5ebdf;
+                }
+
+                .tarjeta h3 {
+                    color: #176B3A;
+                    font-size: 23px;
+                    margin-top: 0;
+                }
+
+                .tarjeta p {
+                    color: #555555;
+                    font-size: 16px;
+                    line-height: 1.6;
+                }
+                .tarjeta:hover {
+                    transform: translate(-10px);
+                    transition: 0.3s;
+                    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+                    transform: translateY(-5px) scale(1.02);
+                }
+
+                .oferta-academica {
+                    padding: 40px 20px;
+                    text-align: center;
+                }
+
+                .oferta-academica h2 {
+                    color: #1b5e20;
+                    font-size: 30px;
+                    margin-bottom: 15px;
+                }
+
+                .oferta-academica p {
+                    font-size: 16px;
+                    color: #555;
+                    line-height: 1.6;
+                    margin-bottom: 30px;
+                }
+
+                .nivel-educativo {
+                    background-color: #f5f8f3;
+                    padding: 25px;
+                    border-radius: 10px;
+                    margin: 20px auto;
+                    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
+                    margin: 25px auto;
+                    border: 1px solid #e5ebdf;
+                    
+                }
+
+                .nivel-educativo h3 {
+                    color: #1b5e20;
+                    font-size: 22px;
+                    margin-bottom: 10px;
+                    font-weight: 700;
+                }
+
+                .nivel-educativo p {
+                    color: #555;
+                    font-size: 16px;
+                    line-height: 1.6;
+                }
+
+                .nivel-educativo:hover {
+                    transform: translate(-10px);
+                    transition: 0.3s;
+                    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+                    transform: translateY(-5px) scale(1.02);
+                }
+
+                html {
+                    scroll-behavior: smooth;
+                }
+
+                .noticias {
+                    padding: 40px 20px;
+                    text-align: center;
+                }
+
+                .noticias h2 {
+                    color: #1b5e20;
+                    font-size: 30px;
+                    margin-bottom: 15px;
+                }
+
+                .noticias p {
+                    color: #555;
+                    font-size: 16px;
+                    line-height: 1.6;
+                }
+
+</style>
+<body>
+
+    <header id="inicio">
+        <div class="encabezado">
+
+            <img src="uepelogobg.png" alt="Fotografia de nuestra institución">
+            <h1>UNIDAD EDUCATIVA PONCE ENRIQUEZ</h1>
+        </div>
+
+        <nav>
+            <a href="#inicio">INICIO</a>
+            <a href="#nosotros">¿QUIENES SOMOS?</a>
+            <a href="#oferta-academica">OFERTA ACADÉMICA</a>
+            <a href="#">NOTICIAS</a>
+            <a href="#">CONTACTO</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+            <section class="portada">
+
+                <h2>BIENVENIDO A NUESTRA INSTITUCIÓN</h2>
+
+                <p>Formando estudiantes con valores y excelencia académica.</p>
+
+                <button>Conoce nuestra institución</button>
+
+            </section>
+            <section class="nosotros" id="nosotros">
+
+                <h2>CONÓCENOS</h2>
+                <p>Somos una institución educativa comprometida con la formación
+                    académica y humana de nuestros estudiantes</p>
+                <div class="tarjeta">
+                    <h3>NUESTRA HISTORIA</h3>
+                    <p>Nuestra institución tiene como objetivo brindar una educación
+                        de calidad, promoviendo valores y conocimientos en sus estudiantes</p>
+                </div>
+                
+                <div class="tarjeta">
+                    <h3>NUESTRA MISIÓN</h3>
+                    <p>Formar estudiantes integros, responsables y comprometidos
+                        con la sociedad.</p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>NUESTRA VISIÓN</h3>
+                        <p>Ser una institución reconocida por su calidad
+                            educativa, innovación y formación de valores</p>
+                </div>
+                    <section class="oferta-academica" id="oferta-academica">
+                        <h2>NUESTRA OFERTA ACADÉMICA</h2>
+                        <p>Ofrecemos una formación académica integral, orientada
+                        al desarrollo de conocimientos, habilidades y valores para
+                        nuestros estudiantes.</p>
+                <div class="nivel-educativo">
+                    <h3>Educación General Básica</h3>
+                    <p>Etapa educativa destinada al desarrollo de conocimientos
+                        fundamentales, habilidades y valores que fortalecen la formación
+                        integral de los estudiantes.</p>
+                </div>
+
+                <div class="nivel-educativo">
+                    <h3>Bachillerato General Unificado</h3>
+                    <p>Etapa educativa que permite profundizar los conocimientos académicos
+                        y preparar a los estudiantes para continuar sus estudios superiores
+                        o incorporarse al mundo laboral
+
+                    </p>
+                </div>
+                </section>
+
+                    </section>
+            </section>
+
+            <section class="noticias" id="noticias">
+                <h2>NOTICIAS Y NOVEDADES</h2>
+                <p>Mantente informado sobre las actividades eventos, logros y novedades
+                de nuestra comunidad educativa.</p>
+
+            <div>
+                <h3>Noticias relevantes</h3>
+            </div>
+            </section>
+        </main>
+</body>
+</html>
